@@ -83,9 +83,7 @@ public class ProdutoController {
 				.orElse(ResponseEntity.status(HttpStatus.NOT_FOUND).build());
 		
 		throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "categoria inexistente.", null);
-
 		}
-		
 		return ResponseEntity.status(HttpStatus.NOT_FOUND).build();
 	}
 	

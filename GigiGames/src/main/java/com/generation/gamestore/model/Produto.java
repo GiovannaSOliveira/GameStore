@@ -25,7 +25,7 @@ public class Produto {
 	private Long id;
 	
 	@ManyToOne
-	@JsonIgnoreProperties ("Produto")
+	@JsonIgnoreProperties ("produto")
 	private Categoria categoria;
 	
 	@NotBlank
